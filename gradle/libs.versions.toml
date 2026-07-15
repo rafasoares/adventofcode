@@ -1,0 +1,12 @@
+[versions]
+kotlin = "2.4.0"
+mockk = "1.14.11"
+testBalloon = "1.0.1-K2.4.0"
+
+[libraries]
+testBalloon = { module = "de.infix.testBalloon:testBalloon-framework-core", version.ref = "testBalloon" }
+mockk = { module = "io.mockk:mockk", version.ref = "mockk" }
+
+[plugins]
+testBalloon = { id = "de.infix.testBalloon", version.ref = "testBalloon" }
+

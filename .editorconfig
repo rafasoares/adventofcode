@@ -9,5 +9,13 @@ charset = utf-8
 trim_trailing_whitespace = true
 insert_final_newline = true
 
+# These are the inputs, so we shouldn't change their formatting
+[*.txt]
+insert_final_newline = false
+trim_trailing_whitespace = false
+indent_style = unset
+indent_size = unset
+tab_width = unset
+
 [*.md]
 trim_trailing_whitespace = false

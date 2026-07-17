@@ -1,20 +1,19 @@
 # Rafa Soares' Advent of Code
 
-This repository contains my solutions to the Advent of
-Code challenges.
+For a general description of the repo, see [this file in the
+`main` branch](https://github.com/rafasoares/adventofcode/blob/main/README.md)
 
-I don't normally do programming challenges, but I figured Advent of Code would
-be a fun way to learn some new programming languages.
+## Kotlin
 
-Keep in mind that, since this is mostly a learning exercise for me, my solutions
-may not be the most efficient or elegant. However, no matter the language, I'll
-always try to write code that is clean and readable.
+This branch includes my solutions for the 2025 Advent of Code challenges written in Kotlin.
 
-This repository is organized in branches by year and language.
+Each day is split into its own package, with some shared utilities, like handling input files, in the root package.
+Inside each package, both part 1 and part 2 solutions are included in the `day**.kt` file. Normally any helpers and
+types are also in this file, but they can be extracted into separate files if the solution is complex enough.
 
-In the root of each branch, there is a single project, according to the specific
-language's conventions. Inside each project, again according to the language's
-conventions, there is a module/package for each day, plus a utility
-module/package for any helper functions that are used across multiple days.
+For each day, there's a matching file in the root `test` package. I usually test both parts against the test input
+separately, but they should work when tested together. I'm using [TestBalloon] to keep test boilerplate to a minimum.
 
-More information will be available in the README.md file of each branch.
+If necessary, any helper methods are also tested inside the relevant day's test suite.
+
+[TestBalloon]: https://github.com/infix-de/testBalloon/
